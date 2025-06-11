@@ -47,7 +47,15 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<OrdersDbContext>();
-    dbContext.Database.EnsureCreated();
+    var env = app.Environment;
+    if (env.IsDevelopment())
+    {
+        await dbContext.Database.EnsureCreatedAsync();
+    }
+    else
+    {
+        await dbContext.Database.MigrateAsync();
+    }
 }
 
 // Configure the HTTP request pipeline.
