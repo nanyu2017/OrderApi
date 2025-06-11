@@ -63,7 +63,7 @@ OrderApi.Tests/            # Test Project
    dotnet build
    ```
 
-4. **Run database migrations** (Optional - database is created automatically with Seed function)
+4. **Run database migrations** (Optional - database is created automatically with Seed function). But migration file also include in project , you can use the migration file to update the database .
 
 ## Running the API
 
