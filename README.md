@@ -1,4 +1,4 @@
-# Orders API
+# Order API
 
 A clean, maintainable Orders API built with C#, .NET 8 Web API, and Entity Framework Core .
 
