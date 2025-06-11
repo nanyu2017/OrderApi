@@ -366,3 +366,9 @@ FodyWeavers.xsd
 *.db
 *.db-shm
 *.db-wal
+
+# Logs
+logs/
+*.log
+log*.txt
+*log*.txt
